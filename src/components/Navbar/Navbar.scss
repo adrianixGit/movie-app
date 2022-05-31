@@ -1,0 +1,41 @@
+.navbar {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(32, 32, 32);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  position: fixed;
+  .navbar__logo {
+    margin-right: 2vw;
+    font-size: 2.5vh;
+  }
+  .navbar__links {
+    display: flex;
+    width: 20vw;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    .navbar__link a {
+      text-decoration: none;
+      color: rgb(145, 145, 145);
+      font-weight: 600;
+      font-size: 1.5vh;
+      &:hover {
+        color: rgb(145, 145, 145, 0.5);
+      }
+    }
+  }
+  .navbar__search {
+    width: 15vw;
+    height: 3vh;
+    justify-self: flex-end;
+    margin-left: auto;
+    outline: none;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color: rgb(80, 79, 79, 0.7);
+    padding: 5px;
+  }
+}

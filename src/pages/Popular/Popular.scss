@@ -1,0 +1,21 @@
+@mixin desktop {
+  @media only screen and (min-width: 980px) {
+    @content;
+  }
+}
+
+.popular {
+  display: grid;
+  width: 100vw;
+  height: 95vh;
+  grid-template-columns: repeat(4, 20vw);
+  grid-auto-rows: 30vh;
+  gap: 2vh;
+  padding-top: 6vh;
+  justify-content: center;
+  overflow-x: hidden;
+  @include desktop {
+    grid-template-columns: repeat(4, 18vw);
+    grid-auto-rows: 50vh;
+  }
+}
