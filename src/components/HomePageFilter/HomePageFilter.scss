@@ -1,0 +1,56 @@
+.homePage__filter {
+  background-color: rgb(32, 32, 32, 0.6);
+  padding: 6vh 1vh 0 1vh;
+  width: 20vw;
+  height: 100vh;
+  border-right: 2px solid rgb(32, 32, 32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .homePage__genres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .homePage__genre {
+      padding: 0.4vh;
+      border-radius: 3px;
+      border: none;
+      margin: 2px;
+      cursor: pointer;
+      background-color: #828386;
+      transition-duration: 0.5s;
+      font-weight: bold;
+      font-size: 1.3vh;
+      &:hover {
+        background-color: rgb(92, 1, 177);
+        color: white;
+      }
+    }
+  }
+  .homePage__year {
+    margin: 2vh 0 2vh 0;
+    text-align: center;
+    .homePage__input {
+      width: 10vw;
+    }
+  }
+  .homePage__paragraph {
+    font-weight: bold;
+    font-size: 1.3vh;
+  }
+  .homePage__input,
+  .homePage__select {
+    height: 2.5vh;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(32, 32, 32);
+  }
+  .homePage__sortBy {
+    text-align: center;
+    .homePage__select {
+      width: 15vw;
+    }
+  }
+}
